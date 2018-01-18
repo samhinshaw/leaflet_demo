@@ -10,10 +10,12 @@ shinyUI(fluidPage(
       6,
       # Output the ggmap map plot
       leafletOutput("ufoPlot")
+      # plotoutput("ufoPlot")
     ),
     column(
       6,
       dataTableOutput("ufoList")
+      # tableOutput("ufoList")
     )
   )
 ))
