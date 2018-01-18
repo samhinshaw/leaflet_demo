@@ -1,7 +1,7 @@
 ## User interface R file.
 shinyUI(fluidPage(
   ## Application title
-  titlePanel("UFO Sightings in Maryland"),
+  titlePanel("UFO Sightings in Maryland - Leaflet & DataTables"),
 
   ## Row for plot
   fluidRow(
