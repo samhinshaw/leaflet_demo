@@ -13,6 +13,7 @@ suppressMessages({
   library(here)
   library(DT)
   library(readr)
+  library(htmltools)
   library(leaflet) # install.packages('leaflet')
 })
 

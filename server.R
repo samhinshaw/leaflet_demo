@@ -2,16 +2,20 @@
 
 ## Here's the start of the shiny "machinery".
 shinyServer(function(input, output) {
+
   output$ufoPlot <- renderLeaflet({
+
     leaflet(ufos) %>%
       addTiles() %>%
       addCircleMarkers(
         lng = ~longitude,
         lat = ~latitude,
-        radius = 5,
+        radius = 3,
         color = "black",
-        stroke = FALSE, fillOpacity = 0.5
+        stroke = FALSE, fillOpacity = 0.5,
+        label = ~htmlEscape(shape)
       )
+
   })
 
   # Example
