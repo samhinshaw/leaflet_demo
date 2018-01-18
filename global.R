@@ -20,3 +20,4 @@ ufos <- read_csv("md_ufos.csv")
 
 ufos %<>%
   filter(latitude <= 40)
+

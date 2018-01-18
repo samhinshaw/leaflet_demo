@@ -1,7 +1,7 @@
 ## User interface R file.
 shinyUI(fluidPage(
   ## Application title
-  titlePanel("UFO Sightings in Maryland - ggmap"),
+  titlePanel("UFO Sightings in Maryland - ggmap & Shiny tables"),
 
   ## Row for plot
   fluidRow(
@@ -9,11 +9,11 @@ shinyUI(fluidPage(
     column(
       6,
       # Output the ggmap map plot
-      leafletOutput("ufoPlot")
+      plotOutput("ufoPlot")
     ),
     column(
       6,
-      dataTableOutput("ufoList")
+      tableOutput("ufoList")
     )
   )
 ))
